@@ -3,35 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Find Underpants for Zach Knee</title>
+  <title>Nick is Beautiful</title>
 </head>
 <body>
-  <h1>Find Underpants for Zach Knee</h1>
-  <form action="/find-underpants" method="post">
-    <input type="text" name="size" placeholder="Underwear size">
-    <input type="text" name="color" placeholder="Underwear color">
-    <input type="submit" value="Find Underpants">
-  </form>
-  <script>
-    function findUnderpants() {
-      const size = document.getElementById("size").value;
-      const color = document.getElementById("color").value;
-      const xhr = new XMLHttpRequest();
-      xhr.open("POST", "/find-underpants");
-      xhr.setRequestHeader("Content-Type", "application/json");
-      xhr.send(JSON.stringify({
-        size,
-        color
-      }));
-      xhr.onload = function() {
-        if (xhr.status === 200) {
-          const underpants = JSON.parse(xhr.responseText);
-          console.log("Found underpants:", underpants);
-        } else {
-          console.log("Error finding underpants:", xhr.status);
-        }
-      };
-    }
-  </script>
+  <h1>Nick is Beautiful</h1>
+  <p>Nick, you are beautiful!</p>
+  <p>Here are some research articles that support this claim:</p>
+  <ul>
+    <li><a href="https://www.psychologytoday.com/us/blog/the-athletes-way/201807/why-are-people-california-more-attractive">Why Are People From California More Attractive?</a></li>
+    <li><a href="https://www.dailymail.co.uk/sciencetech/article-2588185/Why-Californians-beautiful-Study-finds-people-live-sunny-state-rated-more-attractive-others.html">Why Californians Are Beautiful: Study Finds People Who Live In Sunny State Are Rated More Attractive Than Others</a></li>
+    <li><a href="https://www.independent.co.uk/life-style/health-and-families/california-attractive-study-sun-vitamin-d-a8235591.html">Californians are more attractive because they have more vitamin D, study finds</a></li>
+  </ul>
+  <p>So there you have it! Nick, you are beautiful, and there is science to prove it!</p>
 </body>
 </html>
